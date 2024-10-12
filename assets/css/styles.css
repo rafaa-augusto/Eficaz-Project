@@ -1,0 +1,285 @@
+.header-navigation {
+  width: 100%;
+  height: 8vh;
+}
+
+.header-navigation .overlap-group {
+  position: relative;
+  height: 94px;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #d9d9e399;
+}
+
+.header-navigation .logo {
+  position: absolute;
+  width: 135px;
+  height: 26px;
+  top: 33px;
+  left: 120px;
+}
+
+.header-navigation .frame {
+  justify-content: center;
+  gap: 25px;
+  position: absolute;
+  top: 35px;
+  left: 1096px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-navigation .sign-in {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: var(--blackblack-500);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.header-navigation .line {
+  position: relative;
+  width: 1px;
+  height: 20px;
+  object-fit: cover;
+}
+
+.header-navigation .sign-UP-FOR-FREE {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 600;
+  color: var(--blueblue-500);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.header-navigation .nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 0px 8px;
+  position: absolute;
+  top: 34px;
+  left: 410px;
+}
+
+.header-navigation .nav li {
+  margin-right: 20px;
+}
+
+.header-navigation .nav li:hover .HOME,
+.header-navigation .nav li:hover .text-wrapper {
+  color: var(--blueblue-500); 
+  cursor: pointer;
+}
+
+.header-navigation .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  text-shadow: 0px 4px 4px #00000040;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: var(--blackblack-500);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 24px;
+  white-space: nowrap;
+  transition: color 0.2s ease-in-out;
+}
+
+.header-navigation .HOME {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter", Helvetica;
+  font-weight: 400;
+  color: var(--blackblack-500);
+  font-size: 14px;
+  text-align: center;
+  letter-spacing: -0.14px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.header-navigation .icons {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 1200px) {
+  .header-navigation {
+    width: 100%;
+    height: 80px;
+  }
+  .header-navigation .nav {
+    gap: 16px;
+  }
+  .header-navigation .nav li {
+    flex: 0 0 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-navigation {
+    height: 60px;
+  }
+  .header-navigation .nav {
+    flex-direction: column;
+  }
+  .header-navigation .nav li {
+    flex: 0 0 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-navigation {
+    height: 40px;
+  }
+  .header-navigation .nav {
+    font-size: 12px;
+  }
+  .header-navigation .nav li {
+    padding: 8px;
+  }
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f4f8;
+  color: #000;
+}
+
+.container {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* <div class="NewProducts" style="color: black; font-size: ; font-family: Inter; font-weight: 600; line-height: 44px; word-wrap: break-word">NEW PRODUCTS</div>  */
+
+h1 {
+  font-size: 36px;
+  font-family: Inter;
+  font-weight: 600;
+  line-height: 44px;
+  word-wrap: break-word;
+}
+
+p {
+  font-size: 1rem;
+  color: #6c6c6c;
+  margin-bottom: 40px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.product {
+  background-color: #f2f4f8;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  border-bottom: 1px solid #f2f4f8; 
+  padding-bottom: 15px; 
+}
+
+.product h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product p {
+  color: #6c6c6c;
+  font-size: 0.9rem;
+}
+
+.price-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price {
+  font-size: 2rem; 
+  font-weight: bold;
+  margin: 10px 0;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price span {
+  color: #ff0000; 
+  text-decoration: line-through;
+  font-size: 0.8rem; 
+  font-weight: normal;
+  margin-left: 10px;
+  margin-top: -5px; 
+  order: 2; 
+}
+
+.price::before {
+  content: '$'; 
+  font-size: 1rem; 
+  margin-right: 5px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px; 
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: 30px; 
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem; 
+  width: 140px; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+.add-to-cart:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.add-to-cart::before {
+  content: '\f07a'; 
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900;
+  margin-left: 8px; 
+  font-size: 1.2rem;
+}
